@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>INTRO</title>
+    <style>
+        body {
+            color: #fff;
+            background: #17181c;
+            font: 300 1em "Fira Sans", sans-serif;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+            display: flex;
+        }
+        button {
+            background: none;
+            border: 2px solid;
+            font: inherit;
+            line-height: 1;
+            margin: 0.5em;
+            /*padding: 1em 2em;*/
+            width: 300px;
+            height: 100px;
+            font-size: 3.5em;
+            font-weight: 999;
+            letter-spacing: 15px;
+        }
+        .startBtn:hover,
+        .startBtn:focus {
+            -webkit-animation: pulse 1s;
+            animation: pulse 1s;
+            box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+        }
+
+        @-webkit-keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 var(--hover);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 var(--hover);
+            }
+        }
+        .startBtn {
+            --color: #ef6eae;
+            --hover: #ef8f6e;
+        }
+        button {
+            color: var(--color);
+            transition: 0.25s;
+        }
+        button:hover, button:focus {
+            border-color: var(--hover);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="tot">
+        <button class="startBtn" onclick="GoNext()">START</button>
+    </div>
+    <script>
+        function GoNext(){
+            location.href = "main.php";
+        }
+    </script>
+</body>
+</html>
